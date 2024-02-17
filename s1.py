@@ -16,3 +16,5 @@ print("Donkey1 is dancing")
 
 print("Donkey2 is dancing")
 print("Donkey2 is dancing")
+print("Donkey2 is dancing")
+print("Donkey2 is dancing")
