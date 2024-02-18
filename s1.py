@@ -18,3 +18,6 @@ print("Donkey1 is dancing")
 
 print("Donkey2 is dancing")
 print("Donkey2 is dancing")
+
+print("Donkey3 is dancing")
+print("Donkey3 is dancing")
