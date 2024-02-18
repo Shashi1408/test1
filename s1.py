@@ -7,8 +7,8 @@ print("Monkey1 is dancing")
 print("Monkey2 is dancing")
 print("Monkey2 is dancing")
 
-print("Monkey2 is dancing")
-print("Monkey2 is dancing")
+print("Monkey3 is dancing")
+print("Monkey3 is dancing")
 
 print("Donkey is dancing")
 print("Donkey is dancing")
