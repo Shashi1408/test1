@@ -10,6 +10,3 @@ print("Abracabradbra")
 
 print("Donkey is dancing")
 print("Donkey is dancing")
-
-print("Donkey1 is dancing")
-print("Donkey1 is dancing")
