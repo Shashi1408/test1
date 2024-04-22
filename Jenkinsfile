@@ -1,12 +1,9 @@
 pipeline {
     agent {
      label '172.31.29.115'
-    }
-    
-    agent {
      label '172.31.19.156'
     }
-
+    
     stages {
         
         stage('Build') {
