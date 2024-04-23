@@ -9,3 +9,6 @@ print("Monkey2 is dancing")
 
 print("Monkey3 is dancing")
 print("Monkey3 is dancing")
+
+print("Monkey4 is dancing")
+print("Monkey4 is dancing")
