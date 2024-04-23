@@ -1,18 +1,27 @@
 pipeline {
-    agent any 
-    
-    stages {
-        
-        stage('Build') {
-            steps {
-                sh 'rm -rf test1;git clone https://github.com/Shashi1408/test1.git'
-            }
-        }
-        
+    agent any
+
+    environment {
+        SERVERS = ['172.31.22.238', '172.31.23.202'] // List of servers to deploy to
+        USERNAME = 'ec2-user' // SSH username
+        REMOTE_DIR = '/home/ec2-user' // Remote directory to deploy to
+        LOCAL_DIR = '/home/ec2-user' // Local directory containing files to deploy
+    }
+
         stage('Deploy') {
             steps {
-                sh 'cd test1 ; python3 s2.py > /tmp/s2'
+                script {
+                    // Loop through each server
+                    for (server in env.SERVERS) {
+                        // Deploy using SSH
+                        sshagent(credentials: [env.SSH_KEY]) {
+                            sh "python3 s2.py > /tmp/s2"
+                        }
+                    }
+                }
             }
         }
     }
+
 }
+
